@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input{
+    @apply border p-2 rounded-md focus:ring-2 focus:ring-indigo-400 outline-none ;
+  }
+  .card-parent {
+    @apply flex flex-wrap justify-around align-middle gap-4 font-[roboto] ;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition font-[roboto]
+  }
+  .card-normal {
+    @apply bg-white  shadow-md p-5 hover:shadow-lg transition font-[roboto]
+  }
+
+
+  .card-title {
+    @apply font-semibold text-lg  font-[roboto]; 
+  }
+
+  .card-text {
+    @apply w-full bg-[#FFFFFF] border-b-[1px] align-middle px-8 font-[roboto] font-[14px] 
+  }
+
+  .card-list {
+    @apply text-sm text-gray-700 pt-4 space-y-4 font-[roboto];
+  }
+
+  .main-screen {
+    @apply flex font-[roboto] ml-[19%] mt-14
+  }
+  .profileImage {
+    @apply  p-1 rounded-full object-cover border border-gray-300 align-middle
+  }
+  
+
+  .screen-right {
+    @apply  h-full w-[100%] align-middle bg-[#F1F4F9] font-[roboto] 
+  }
+
+  .tailwindsubmitbtn {
+    @apply bg-[#7555E9] h-9 px-3 mb-2 rounded text-white hover:bg-[#5a3fd1] transition duration-300 shadow-md hover:shadow-lg font-[roboto]
+  }
+}
