@@ -19,7 +19,7 @@ function Signup() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/user/register", 
+        "https://crm-softwere.onrender.com/user/register", 
         count, {
           withCredentials: true // 👈 LOGIN ME BHI MUST
         }

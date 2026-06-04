@@ -62,7 +62,7 @@ function AdminDashboard() {
   const Submit = async (e) => {
     try {
       e.preventDefault();
-      const response = await axios.post("http://localhost:5000/apihospital/hospital", Hospital);
+      const response = await axios.post("https://crm-softwere.onrender.com/apihospital/hospital", Hospital);
       setHospital(response?.data);
       setHospital(initial);
 

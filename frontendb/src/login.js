@@ -37,7 +37,7 @@
 
 //     try {
 //       const resp = await axios.post(
-//         "http://localhost:5000/user/login",
+//         "https://crm-softwere.onrender.com/user/login",
 //         formData
 //       );
 // console.log("ye aa rha hai ya nhi ",resp.data)
@@ -87,7 +87,7 @@
 
 //     try {
 //       const response = await axios.post(
-//         "http://localhost:5000/admin/adminRegister",
+//         "https://crm-softwere.onrender.com/admin/adminRegister",
 //         formInfo
 //       );
 //       setFormInfo("");
@@ -117,7 +117,7 @@
 
 //   const ForgotPassword = async (userId) => {
 //     try {
-//       await axios.post(`http://localhost:5000/admin/${userId}`, {
+//       await axios.post(`https://crm-softwere.onrender.com/admin/${userId}`, {
 //         ForgotPassword: true
 //       });
 //       setStatusBtn(true);
@@ -282,7 +282,7 @@ function Login() {
 
     try {
       const resp = await axios.post(
-        "http://localhost:5000/user/login",
+        "https://crm-softwere.onrender.com/user/login",
         formData
       );
       console.log("ye aa rha hai ya nhi ", resp.data)
@@ -337,7 +337,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/admin/adminRegister",
+        "https://crm-softwere.onrender.com/admin/adminRegister",
         formInfo
       );
       setFormInfo("");
@@ -367,7 +367,7 @@ function Login() {
 
   const ForgotPassword = async (userId) => {
     try {
-      await axios.post(`http://localhost:5000/admin/${userId}`, {
+      await axios.post(`https://crm-softwere.onrender.com/admin/${userId}`, {
         ForgotPassword: true
       });
       setStatusBtn(true);

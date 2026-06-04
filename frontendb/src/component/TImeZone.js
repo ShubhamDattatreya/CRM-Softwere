@@ -9,7 +9,7 @@ function TimeZone() {
 
   const fetchTime = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/timezone");
+      const response = await axios.get("https://crm-softwere.onrender.com/timezone");
 
       const date = new Date(response?.data?.startTime);
       const userLocalTime = date.toLocaleString(undefined, {

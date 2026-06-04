@@ -78,7 +78,7 @@
 //   //   e.preventDefault();
 //   //   try {
 //   //     await axios.put(
-//   //       `http://localhost:5000/adminPopupUpdate/update/${popupData.id}`,
+//   //       `https://crm-softwere.onrender.com/adminPopupUpdate/update/${popupData.id}`,
 //   //       popupData, {
 //   //       btnStatus: true
 //   //     }
@@ -105,7 +105,7 @@
 //     e.preventDefault();
 //     try {
 //       await axios.put(
-//         `http://localhost:5000/adminPopupUpdate/update/${popupData.id}`,
+//         `https://crm-softwere.onrender.com/adminPopupUpdate/update/${popupData.id}`,
 //         {
 //           popupData,
 //           // btnStatus: true

@@ -61,7 +61,7 @@
 
 //     const fetchHospitals = async () => {
 //         try {
-//             const res = await axios.get("http://localhost:5000/apihospital/hospital",{
+//             const res = await axios.get("https://crm-softwere.onrender.com/apihospital/hospital",{
 //                 withCredentials: true,
 //               });
 //             //   console.log("cookierrrrs:", res.cookies);
@@ -85,7 +85,7 @@
 //         try {
 //             e.preventDefault();
 //             await axios.put(
-//                 `http://localhost:5000/apihospital/hospital/${id}`,
+//                 `https://crm-softwere.onrender.com/apihospital/hospital/${id}`,
 //                 HospitalUpdate
 //             );
 
@@ -100,7 +100,7 @@
 
 //     const deleteHos = async (id) => {
 //         try {
-//             const responce = await axios.delete(`http://localhost:5000/apihospital/hospital/${id}`)
+//             const responce = await axios.delete(`https://crm-softwere.onrender.com/apihospital/hospital/${id}`)
 //             sethospitalsdelete(responce?.data?.data)
 //             fetchHospitals();
 //             console.log("hospital deleated", responce?.data?.data)
@@ -341,7 +341,7 @@ function AdminHome() {
     const fetchHospitals = async () => {
         try {
             // Updated API URL with page and limit query parameters
-            const res = await axios.get(`http://localhost:5000/api/Pagination/pagination?page=${currentPage}&limit=${limit}`, {
+            const res = await axios.get(`https://crm-softwere.onrender.com/api/Pagination/pagination?page=${currentPage}&limit=${limit}`, {
                 withCredentials: true,
             });
             
@@ -368,7 +368,7 @@ function AdminHome() {
         try {
             e.preventDefault();
             await axios.put(
-                `http://localhost:5000/apihospital/hospital/${id}`,
+                `https://crm-softwere.onrender.com/apihospital/hospital/${id}`,
                 HospitalUpdate
             );
             setHospitalsUpdate(initial);
@@ -381,7 +381,7 @@ function AdminHome() {
 
     const deleteHos = async (id) => {
         try {
-            const responce = await axios.delete(`http://localhost:5000/apihospital/hospital/${id}`)
+            const responce = await axios.delete(`https://crm-softwere.onrender.com/apihospital/hospital/${id}`)
             sethospitalsdelete(responce?.data?.data)
             fetchHospitals(); // Refresh current page data after delete
             console.log("hospital deleted", responce?.data?.data)

@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://crm-softwere.onrender.com";
 
 export const UserFeatch = () => {
   return axios.get(`${BASE_URL}/admin/adminFetch`);
